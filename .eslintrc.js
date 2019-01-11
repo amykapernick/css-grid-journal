@@ -1,59 +1,51 @@
 module.exports = {
-    'parser': 'babel-eslint',
-    'parserOptions': {
-        'ecmaVersion': 6,
-        'ecmaFeatures': {
-            'jsx': true,
-            'experimentalObjectRestSpread': true
-        }
-    },
-    plugins: ['ghost', 'react'],
-    extends: [
-        'plugin:ghost/node',
-        'plugin:ghost/ember',
-        'plugin:react/recommended'
-    ],
-    "settings": {
-        "react": {
-            "createClass": "createReactClass",
-            "pragma": "React",
-            "version": "16.0",
-            "flowVersion": "0.53"
+    extends: ["standard"],
+    plugins: ["standard", "react"],
+    rules: {
+      "no-var": "error", // optional, recommended when using es6+
+      "no-unused-vars": 1, // recommended
+      "arrow-spacing": ["error", { before: true, after: true }], // recommended
+      indent: ["error", "tab"],
+      "no-tabs": 0,
+      "comma-dangle": [
+        "error",
+        {
+          objects: "only-multiline",
+          arrays: "only-multiline",
+          imports: "never",
+          exports: "never",
+          functions: "never",
         },
-        "propWrapperFunctions": ["forbidExtraProps"]
+      ],
+  
+      // options to emulate prettier setup
+      semi: ["error", "never"],
+      "template-curly-spacing": ["error", "always"],
+      "arrow-parens": ["error", "as-needed"],
+  
+      // standard.js
+      "space-before-function-paren": [
+        "error",
+        {
+          named: "always",
+          anonymous: "always",
+          asyncArrow: "always",
+        },
+      ],
+  
+      // standard plugin - options
+      "standard/object-curly-even-spacing": ["error", "either"],
+      "standard/array-bracket-even-spacing": ["error", "either"],
+      "standard/computed-property-even-spacing": ["error", "even"],
+      "standard/no-callback-literal": ["error", ["cb", "callback"]],
+  
+      // react plugin - options
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "one-var": [2, "consecutive"],
     },
-    "rules": {
-        "ghost/sort-imports-es6-autofix/sort-imports-es6": "off",
-        "ghost/ember/use-ember-get-and-set": "off",
-        "no-console": "off",
-        "no-inner-declarations": "off",
-        "valid-jsdoc": "off",
-        "require-jsdoc": "off",
-        "quotes": ["error", "backtick"],
-        "consistent-return": ["error"],
-        "arrow-body-style": [
-            "error",
-            "as-needed",
-            { "requireReturnForObjectLiteral": true }
-        ],
-        "jsx-quotes": ["error", "prefer-double"],
-        "semi": ["error", "never"],
-        "object-curly-spacing": ["error", "always"],
-        "comma-dangle": [
-            "error",
-            {
-                "arrays": "always-multiline",
-                "objects": "always-multiline",
-                "imports": "always-multiline",
-                "exports": "always-multiline",
-                "functions": "ignore"
-            }
-        ],
-        "react/prop-types": [
-            "error",
-            {
-                "ignore": ["children"]
-            }
-        ]
+    parser: "babel-eslint",
+    parserOptions: {
+      ecmaVersion: 8, // optional, recommended 6+
     }
-};
+  }
