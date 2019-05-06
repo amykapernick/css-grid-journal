@@ -4,15 +4,18 @@ import Helmet from 'react-helmet'
 import Header from './header'
 import Footer from './footer'
 
-const Layout = ({ children, meta }) => (
+import '../scss/global.css'
+
+const Layout = ({ children, meta, className }) => (
 		<Fragment>
 			<Meta {...meta} />
-			<header>{<Header />}</header>
-			<main>{children}</main>
-			<footer>{<Footer />}</footer>
+			<div class={'root ' + className}>
+				<header>{<Header />}</header>
+				{children}
+				<footer>{<Footer />}</footer>
+			</div>
 		</Fragment>
 	),
-
 	Meta = ({ name, description, slug, image }) => {
 		let siteUrl = 'https://silly-yonath-f5368a.netlify.com'
 
