@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Header from './header'
 import Footer from './footer'
 
+import '../scss/global.scss'
 import '../scss/global.css'
 
 const Layout = ({ children, meta, className }) => (

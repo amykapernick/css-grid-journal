@@ -2,20 +2,21 @@ module.exports = {
 	siteMetadata: {
 		title: 'My Notebook',
 		description: 'Notebook App that showcases CSS Grid',
-		siteUrl: 'https://silly-yonath-f5368a.netlify.com'
+		siteUrl: 'https://silly-yonath-f5368a.netlify.com',
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-sass',
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
-				include: './src/img/'
-			}
+				include: './src/img/',
+			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${ __dirname }/src/img`,
+				path: `${__dirname}/src/img`,
 				name: 'images',
 			},
 		},
@@ -31,7 +32,7 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-				path: `${ __dirname }/src/notes`,
+				path: `${__dirname}/src/notes`,
 				name: 'markdown-pages',
 			},
 		},
@@ -53,8 +54,8 @@ module.exports = {
 							usePrettierrc: true,
 						},
 					},
-				]
-			}
+				],
+			},
 		},
 	],
 }

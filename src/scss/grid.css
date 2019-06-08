@@ -1,4 +1,4 @@
-/* .root {
+.root {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 100px 1fr 50px;
@@ -32,7 +32,7 @@ main.grid article {
 }
 
 main.grid article a {
-	white-space: normal;
+	white-space: break-word;
 }
 
 div > header {
@@ -59,10 +59,10 @@ div > header {
 footer {
 	grid-area: footer;
 	justify-self: start;
-	width: 300px;
+	width: 350px;
 }
 
 footer nav {
 	display: flex;
 	justify-content: space-between;
-} */
+}
