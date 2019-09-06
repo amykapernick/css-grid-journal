@@ -11,8 +11,12 @@
 .root.app {
 	grid-template-areas:
 		'header header header header header'
-		'nav note note note sidebar'
+		'nav note note note note'
 		'nav footer footer footer footer';
+	/* grid-template-areas:
+		'header header header header header'
+		'nav note note note sidebar'
+		'nav footer footer footer footer'; */
 }
 
 main.grid {
@@ -44,16 +48,19 @@ div > header {
 }
 
 .root.app > main {
-	display: contents;
+	/* display: contents; */
+	display: grid;
 	grid-area: note;
+	grid-template-columns: subgrid;
 }
 
 .root.app > main > article {
-	grid-area: note;
+	/* grid-area: note; */
+	grid-column: span 3;
 }
 
 .root.app > main > aside {
-	grid-area: sidebar;
+	/* grid-area: sidebar; */
 }
 
 footer {

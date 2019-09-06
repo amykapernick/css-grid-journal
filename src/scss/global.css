@@ -53,16 +53,16 @@ a {
 }
 
 .root {
-	/* background: lavender; */
-	/* border: 5px solid rebeccapurple; */
+	background: lavender;
+	border: 5px solid rebeccapurple;
 	min-height: 100vh;
 }
 
 .root > header {
-	/* background-color: honeydew; */
-	/* background-image: linear-gradient(90deg, transparent 50%, mintcream 50%); */
+	background-color: honeydew;
+	background-image: linear-gradient(90deg, transparent 50%, mintcream 50%);
 	background-size: 50px 50px;
-	/* border: 5px solid green; */
+	border: 5px solid green;
 	padding-left: 30px;
 }
 
@@ -71,8 +71,8 @@ a {
 }
 
 .app section {
-	/* background-color: lemonchiffon; */
-	/* background-image: linear-gradient(transparent 50%, lightyellow 50%); */
+	background-color: lemonchiffon;
+	background-image: linear-gradient(transparent 50%, lightyellow 50%);
 	background-size: 50px 50px;
 	border: 1px solid #5b5b5b;
 	border: 5px solid gold;
@@ -86,14 +86,14 @@ main.grid article {
 }
 
 main.grid article {
-	/* background: linear-gradient(135deg, #fff 25%, transparent 25%) -50px 0,
+	background: linear-gradient(135deg, #fff 25%, transparent 25%) -50px 0,
 		linear-gradient(225deg, #fff 25%, transparent 25%) -50px 0,
 		linear-gradient(315deg, #fff 25%, transparent 25%),
 		linear-gradient(45deg, #fff 25%, transparent 25%);
 	background-size: 100px 100px;
 	background-color: #ffe7de;
 
-	border: 5px solid lightsalmon; */
+	border: 5px solid lightsalmon;
 }
 
 section article h2,
@@ -119,16 +119,16 @@ main.grid article time {
 }
 
 .root.app > main {
-	/* background-color: lightcyan; */
-	/* border: 5px solid #1c75bc; */
+	background-color: lightcyan;
+	border: 5px solid #1c75bc;
 }
 
 .app main > article {
-	/* background: lightcyan; */
-	/* border: 5px solid #1c75bc; */
+	background: lightcyan;
+	border: 5px solid #1c75bc;
 	padding: 15px;
-	border-top: 1px solid #5b5b5b;
-	border-bottom: 1px solid #5b5b5b;
+	/* border-top: 1px solid #5b5b5b; */
+	/* border-bottom: 1px solid #5b5b5b; */
 }
 
 .app main article h1 {
@@ -140,15 +140,15 @@ main.grid article time {
 }
 
 .app aside {
-	/* background: linear-gradient(135deg, #fff 25%, transparent 25%) -50px 0,
+	background: linear-gradient(135deg, #fff 25%, transparent 25%) -50px 0,
 		linear-gradient(225deg, #fff 25%, transparent 25%) -50px 0,
 		linear-gradient(315deg, #fff 25%, transparent 25%),
 		linear-gradient(45deg, #fff 25%, transparent 25%);
 	background-size: 100px 100px;
-	background-color: #ffe7de; */
+	background-color: #ffe7de;
 
 	border: 1px solid #5b5b5b;
-	/* border: 5px solid lightsalmon; */
+	border: 5px solid lightsalmon;
 	padding: 15px;
 }
 
@@ -182,7 +182,7 @@ main.grid article time {
 }
 
 footer {
-	/* background-color: pink;
+	background-color: pink;
 	background-image: repeating-linear-gradient(
 		45deg,
 		transparent,
@@ -190,7 +190,7 @@ footer {
 		mistyrose 35px,
 		mistyrose 70px
 	);
-	border: 5px solid hotpink; */
-	align-self: center;
+	border: 5px solid hotpink;
+	/* align-self: center; */
 	padding-left: 20px;
 }
