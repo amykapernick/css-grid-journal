@@ -2,7 +2,9 @@
 title: 'How to Manage Your Ducks'
 createDate: 2019-06-01
 updateDate: 2019-06-08
-tags:
+tags: notes
+layout: layouts/note.njk
+topic:
     - Non Technical
     - Mental Health
     - Ducks

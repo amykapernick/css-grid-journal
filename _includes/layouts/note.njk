@@ -1,0 +1,47 @@
+{% include 'header_app.njk' %}
+    
+    <section>
+            <nav>
+                {% for note in collections.notes %}
+                        <article>
+                            <header>
+                                <h2>
+                                    <a href="{{note.url | url}}">
+                                        {{note.data.title}}
+                                    </a>
+                                </h2>
+                                <time>
+                                    {{note.data.updateDate | readableDate}}
+                                </time>
+                            </header>
+                            {# <div>{note.excerpt}</div> #}
+                        </article>
+                
+                {% endfor %}
+            </nav>
+        </section>
+        <main>
+            <article>
+                <header>
+                    <h1>{{title}}</h1>
+                    <time>{{updateDate | readableDate}}</time>
+                </header>
+                <main>{{content | safe}}</main>
+            </article>
+            <aside>
+                <h3>Created On</h3>
+                <time>{{createDate | readableDate}}</time>
+                <h3>Tags</h3>
+                <ul>
+                {% for tag in topic %}
+                    <li>
+                        <a>{{tag}}</a>
+                    </li>
+                {% endfor %}
+                   
+                </ul>
+            </aside>
+        </main>
+    
+{% include 'footer.njk' %}
+

@@ -2,7 +2,9 @@
 title: 'The Fallacy of a Full Stack Developer'
 createDate: 2019-06-01
 updateDate: 2019-06-08
-tags:
+tags: notes
+layout: layouts/note.njk
+topic:
     - Non Technical
     - Full Stack
     - Joint

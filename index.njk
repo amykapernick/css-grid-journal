@@ -1,0 +1,18 @@
+{% include 'header.njk' %}
+<main class="grid">
+    {% for note in collections.notes %}
+        <article>
+            <header>
+                <h2>
+                    <a href="{{note.url | url}}">
+                        {{note.data.title}}
+                    </a>
+                </h2>
+                <time>
+                   {{note.data.updateDate | readableDate}}
+                </time>
+            </header>
+        </article>
+    {% endfor %}
+</main>
+{% include 'footer.njk' %}

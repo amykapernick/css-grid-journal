@@ -2,7 +2,9 @@
 title: 'The Art of Failure'
 createDate: 2017-11-14
 updateDate: 2018-10-27
-tags:
+tags: notes
+layout: layouts/note.njk
+topic:
     - Non-Technical
     - Failure
     - Google Devfest

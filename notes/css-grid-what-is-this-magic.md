@@ -2,7 +2,9 @@
 title: 'CSS Grid - What is this Magic?!'
 createDate: 2018-12-26
 updateDate: 2019-01-30
-tags:
+tags: notes
+layout: layouts/note.njk
+topic:
     - CSS
     - CSS Grid
     - Front End
@@ -11,6 +13,11 @@ tags:
     - London
     - Minnesota
     - Oslo
+    - Sydney
+    - DDD
+    - Perth
+    - Adelaide
+    - Laracon
 ---
 
 In the beginning, there was darkness and emptiness and a man named Tim Berners-Lee said "Let there be internet".

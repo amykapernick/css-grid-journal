@@ -2,7 +2,9 @@
 title: 'The Need for PageSpeed - A Hot Pursuit'
 createDate: 2017-11-01
 updateDate: 2019-01-11
-tags:
+tags: notes
+layout: layouts/note.njk
+topic:
     - Performance
     - PageSpeed
     - Satire
