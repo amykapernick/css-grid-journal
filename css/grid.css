@@ -29,6 +29,7 @@ main > article {
 footer {
 	grid-area: footer;
 	justify-self: start;
+	width: 500px;
 }
 
 footer nav {
