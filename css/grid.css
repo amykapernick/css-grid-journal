@@ -11,3 +11,7 @@ body > header {
 section {
 	grid-row: span 2;
 }
+
+main {
+	grid-column: 2 / -1;
+}
