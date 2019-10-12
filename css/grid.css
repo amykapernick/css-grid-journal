@@ -4,7 +4,7 @@ body {
 	grid-template-rows: 100px 1fr 50px;
 	grid-template-areas:
 		'header header 	header 	header 	header'
-		'nav	note	note	note	note'
+		'nav	note	note	note	sidebar'
 		'nav	footer	footer	footer	footer';
 }
 
@@ -18,6 +18,14 @@ section {
 
 main {
 	display: contents;
+}
+
+article {
+	grid-area: note;
+}
+
+aside {
+	grid-area: sidebar;
 }
 
 footer {
