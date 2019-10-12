@@ -28,6 +28,7 @@ main > article {
 
 footer {
 	grid-area: footer;
+	justify-self: start;
 }
 
 footer nav {
