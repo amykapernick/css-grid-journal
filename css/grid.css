@@ -29,3 +29,8 @@ main > article {
 footer {
 	grid-area: footer;
 }
+
+footer nav {
+	display: flex;
+	justify-content: space-between;
+}
