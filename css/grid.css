@@ -3,3 +3,7 @@ body {
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 100px 1fr 50px;
 }
+
+body > header {
+	grid-column: 1 / -1;
+}
