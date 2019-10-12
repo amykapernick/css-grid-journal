@@ -22,6 +22,10 @@ body > main {
 	grid-template-columns: subgrid;
 }
 
+main > article {
+	grid-column: 1 / -2;
+}
+
 footer {
 	grid-area: footer;
 }
