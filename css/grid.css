@@ -16,8 +16,9 @@ section {
 	grid-area: nav;
 }
 
-main {
+body > main {
 	grid-area: note;
+	display: grid;
 }
 
 footer {
