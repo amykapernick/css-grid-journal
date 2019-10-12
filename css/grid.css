@@ -17,7 +17,7 @@ section {
 }
 
 main {
-	grid-area: note;
+	display: contents;
 }
 
 footer {
