@@ -15,3 +15,7 @@ section {
 main {
 	grid-column: 2 / -1;
 }
+
+footer {
+	grid-column: 2 / -1;
+}
