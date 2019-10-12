@@ -19,6 +19,7 @@ section {
 body > main {
 	grid-area: note;
 	display: grid;
+	grid-template-columns: subgrid;
 }
 
 footer {
