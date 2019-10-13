@@ -6,10 +6,10 @@
 	"main": "index.njk",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/amykapernick/css-grid-journal-pwa.git"
+		"url": "git+https://github.com/amykapernick/css-grid-journal.git"
 	},
 	"bugs": {
-		"url": "https://github.com/amykapernick/css-grid-journal-pwa/issues"
+		"url": "https://github.com/amykapernick/css-grid-journal/issues"
 	},
 	"scripts": {
 		"start": "npm run dev",
