@@ -12,7 +12,7 @@ body.app {
 	grid-template-rows: 100px 1fr 50px;
 	grid-template-areas:
 		'header header 	header 	header 	header'
-		'nav	note	note	note	note'
+		'nav	note	note	note	sidebar'
 		'nav	footer	footer	footer	footer';
 }
 
@@ -26,12 +26,15 @@ section {
 
 body > main {
 	grid-area: note;
-	display: grid;
-	grid-template-columns: subgrid;
+	display: contents;
 }
 
 main > article {
-	grid-column: 1 / -2;
+	grid-area: note;
+}
+
+aside {
+	grid-area: sidebar;
 }
 
 main.grid {
@@ -42,7 +45,7 @@ main.grid {
 }
 
 main.grid article {
-	grid-column: auto;
+	grid-area: auto;
 }
 
 footer {
@@ -54,4 +57,23 @@ footer {
 footer nav {
 	display: flex;
 	justify-content: space-between;
+}
+
+@supports (display: subgrid) {
+	body.app {
+		grid-template-areas:
+			'header header 	header 	header 	header'
+			'nav	note	note	note	note'
+			'nav	footer	footer	footer	footer';
+	}
+
+	body > main {
+		grid-area: note;
+		display: grid;
+		grid-template-columns: subgrid;
+	}
+
+	main > article {
+		grid-column: 1 / -2;
+	}
 }
