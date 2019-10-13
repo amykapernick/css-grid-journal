@@ -1,72 +1,54 @@
-.root {
+body {
 	display: grid;
+	grid-template-rows: 100px 1fr 50px;
+	grid-template-areas:
+		'header'
+		'note'
+		'footer';
+}
+
+body.app {
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 100px 1fr 50px;
 	grid-template-areas:
-		'header header header header header'
-		'note note note note note'
-		'footer footer footer footer footer';
+		'header header 	header 	header 	header'
+		'nav	note	note	note	note'
+		'nav	footer	footer	footer	footer';
 }
 
-.root.app {
-	grid-template-areas:
-		'header header header header header'
-		'nav note note note note'
-		'nav footer footer footer footer';
-	/* grid-template-areas:
-		'header header header header header'
-		'nav note note note sidebar'
-		'nav footer footer footer footer'; */
+body > header {
+	grid-area: header;
+}
+
+section {
+	grid-area: nav;
+}
+
+body > main {
+	grid-area: note;
+	display: grid;
+	grid-template-columns: subgrid;
+}
+
+main > article {
+	grid-column: 1 / -2;
 }
 
 main.grid {
-	border: 1px solid #5b5b5b;
-	grid-area: note;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-template-rows: repeat(auto-fill, 150px);
 	grid-gap: 20px;
-	padding: 20px;
 }
 
 main.grid article {
-	border: 1px solid #5b5b5b;
-	border-radius: 30px;
-	padding: 15px;
-}
-
-main.grid article a {
-	white-space: break-word;
-}
-
-div > header {
-	grid-area: header;
-}
-
-.app section {
-	grid-area: nav;
-}
-
-.root.app > main {
-	/* display: contents; */
-	display: grid;
-	grid-area: note;
-	grid-template-columns: subgrid;
-}
-
-.root.app > main > article {
-	/* grid-area: note; */
-	grid-column: span 3;
-}
-
-.root.app > main > aside {
-	/* grid-area: sidebar; */
+	grid-column: auto;
 }
 
 footer {
 	grid-area: footer;
 	justify-self: start;
-	width: 350px;
+	width: 500px;
 }
 
 footer nav {
