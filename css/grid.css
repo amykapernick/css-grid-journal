@@ -1,5 +1,13 @@
 body {
 	display: grid;
+	grid-template-rows: 100px 1fr 50px;
+	grid-template-areas:
+		'header'
+		'note'
+		'footer';
+}
+
+body.app {
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 100px 1fr 50px;
 	grid-template-areas:
@@ -24,6 +32,10 @@ body > main {
 
 main > article {
 	grid-column: 1 / -2;
+}
+
+main.grid {
+	display: grid;
 }
 
 footer {
