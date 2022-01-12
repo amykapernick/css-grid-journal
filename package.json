@@ -19,7 +19,7 @@
 	"dependencies": {
 		"@11ty/eleventy": "^0.12.1",
 		"clean-css": "^5.1.2",
-		"markdown-it": "^12.0.4",
+		"markdown-it": "^12.3.2",
 		"markdown-it-anchor": "^7.1.0",
 		"path": "^0.12.7"
 	}
